@@ -1,5 +1,5 @@
 {
-  "name": "viem",
+  "name": "@b2network/viem",
   "description": "TypeScript Interface for Ethereum",
   "version": "1.19.12",
   "type": "module",
@@ -145,7 +145,7 @@
   },
   "license": "MIT",
   "homepage": "https://viem.sh",
-  "repository": "wevm/viem",
+  "repository": "https://github.com/b2network/viem",
   "authors": [
     "awkweb.eth",
     "jxom.eth"

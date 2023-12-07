@@ -1,3 +1,4 @@
+import { secp256k1 } from '@noble/curves/secp256k1'
 import type { ErrorType } from '../../errors/utils.js'
 import type { ByteArray, Hex } from '../../types/misc.js'
 import { type IsHexErrorType, isHex } from '../data/isHex.js'
@@ -28,7 +29,6 @@ export async function recoverPublicKey({
   let v = hexToNumber(`0x${signatureHex.slice(130)}`)
   if (v === 0 || v === 1) v += 27
 
-  const { secp256k1 } = await import('@noble/curves/secp256k1')
   const publicKey = secp256k1.Signature.fromCompact(
     signatureHex.substring(2, 130),
   )
