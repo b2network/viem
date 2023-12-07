@@ -34,6 +34,7 @@ import {
   encodeFunctionData,
 } from '../../utils/abi/encodeFunctionData.js'
 import type { RequestErrorType } from '../../utils/buildRequest.js'
+import { offchainLookup, offchainLookupSignature } from '../../utils/ccip.js'
 import {
   type GetChainContractAddressErrorType,
   getChainContractAddress,
@@ -195,9 +196,6 @@ export async function call<TChain extends Chain | undefined>(
     return { data: response }
   } catch (err) {
     const data = getRevertErrorData(err)
-    const { offchainLookup, offchainLookupSignature } = await import(
-      '../../utils/ccip.js'
-    )
     if (data?.slice(0, 10) === offchainLookupSignature && to) {
       return { data: await offchainLookup(client, { data, to }) }
     }
