@@ -22,3 +22,5 @@ tsconfig*.tsbuildinfo
 # tests
 generated.ts
 vectors/**/*.json
+
+.npmrc
