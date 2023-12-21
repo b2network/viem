@@ -1,5 +1,53 @@
 # viem
 
+## 1.20.3
+
+### Patch Changes
+
+- [`fa2f7352`](https://github.com/wevm/viem/commit/fa2f735232d088c84566a4be4af6be2689bae02d) Thanks [@jxom](https://github.com/jxom)! - Exported `getAddresses` in `viem/actions`
+
+- [#1500](https://github.com/wevm/viem/pull/1500) [`95a5eee1`](https://github.com/wevm/viem/commit/95a5eee10ac76d3379dbf45f7e3803425492fdc2) Thanks [@0xarthurxyz](https://github.com/0xarthurxyz)! - Removed `feeCurrency`, `gatewayFee`, and `gatewayFeeRecipient` properties from Celo transaction receipts.
+
+- [#1597](https://github.com/wevm/viem/pull/1597) [`e318cb37`](https://github.com/wevm/viem/commit/e318cb375c22df6139c4e34bde35abf30dff9cc7) Thanks [@2manslkh](https://github.com/2manslkh)! - Updated Taiko Jolnir RPC URL.
+
+## 1.20.2
+
+### Patch Changes
+
+- [#1560](https://github.com/wevm/viem/pull/1560) [`664778d0`](https://github.com/wevm/viem/commit/664778d0858ebc7c6bfc24a9be096c04d4e604e0) Thanks [@dutterbutter](https://github.com/dutterbutter)! - Added zkSync Sepolia Testnet.
+
+## 1.20.1
+
+### Patch Changes
+
+- [#1570](https://github.com/wevm/viem/pull/1570) [`cbd24e84`](https://github.com/wevm/viem/commit/cbd24e8436da4eb0a0526657ebb9f3175d0c10bd) Thanks [@crackcodesprogramloads](https://github.com/crackcodesprogramloads)! - Added optional alchemy rpcUrls for arbitrumSepolia
+
+- [#1592](https://github.com/wevm/viem/pull/1592) [`482ca63e`](https://github.com/wevm/viem/commit/482ca63eb2c56705ca6c96b766fa98286339091c) Thanks [@roninjin10](https://github.com/roninjin10)! - Added `eth_blobGasFee` type.
+
+## 1.20.0
+
+### Minor Changes
+
+- [#1589](https://github.com/wevm/viem/pull/1589) [`69cf2d05`](https://github.com/wevm/viem/commit/69cf2d05100a211e737ba81718c11b864785d5f3) Thanks [@jxom](https://github.com/jxom)! - Added `ripemd160` and `sha256` hashing functions (re-exported from `@noble/hashes`).
+
+## 1.19.15
+
+### Patch Changes
+
+- [#1586](https://github.com/wevm/viem/pull/1586) [`f9bfa727`](https://github.com/wevm/viem/commit/f9bfa727671452c46df7db4837457d1d9296b8c8) Thanks [@jxom](https://github.com/jxom)! - Fixed an issue where Viem could extract the wrong ABI item if ambiguity is detected within overload ABI items. Now, if ambiguity is detected, an error will be thrown.
+
+## 1.19.14
+
+### Patch Changes
+
+- [#1585](https://github.com/wevm/viem/pull/1585) [`5f54c878`](https://github.com/wevm/viem/commit/5f54c8780be1895d7f22f5d2b90878a81c67ac1f) Thanks [@zapnap](https://github.com/zapnap)! - Added Fantom Sonic Open Testnet
+
+## 1.19.13
+
+### Patch Changes
+
+- [`007fe124`](https://github.com/wevm/viem/commit/007fe124d2c8a5f709a0d691ccbcaaf5f9a6d411) Thanks [@jxom](https://github.com/jxom)! - Fixed issue where `getEnsName` was returning stale results for updated eth records.
+
 ## 1.19.12
 
 ### Patch Changes
